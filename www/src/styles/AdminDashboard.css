@@ -1,0 +1,76 @@
+.admin-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  color: white;
+}
+
+.form-box {
+  background: #0d0d0d;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  background: #121212;
+  border: 1px solid #1f1f1f;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+.form-input:focus {
+  border-color: #00cc66;
+  outline: none;
+}
+
+.big-textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  background: #00cc66;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #00e673;
+}
+
+.challenge-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #121212;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #1f1f1f;
+}
+
+.delete-btn {
+  background: #cc0000;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #ff1a1a;
+}

@@ -1,0 +1,45 @@
+/* Navbar */
+.navbar {
+  background: #0d0d0d; /* keep it dark */
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* slight depth */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #01af5e; /* club green accent */
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ccc; /* subtle text */
+  font-weight: 500;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.nav-links a:hover {
+  color: #01af5e; /* club green on hover */
+  transform: translateY(-2px); /* subtle lift effect */
+}
+
+/* Optional: active link highlight */
+.nav-links a.active {
+  color: #01af5e;
+  border-bottom: 2px solid #01af5e;
+  padding-bottom: 2px;
+}
+

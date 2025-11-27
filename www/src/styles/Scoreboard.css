@@ -1,0 +1,123 @@
+.scoreboard-title {
+  color: #01af5e; /* subtle green */
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.scoreboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #111; /* slightly lighter than page background */
+  transition: background 0.2s;
+}
+
+.score-row:hover {
+  background: #1a1a1a; /* subtle hover effect */
+}
+
+.rank {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ccc; /* muted */
+  width: 35px;
+}
+
+.username {
+  flex: 1;
+  text-align: left;
+  color: #f0f0f0;
+  font-weight: 500;
+}
+
+.point {
+  font-weight: 600;
+  color: #01af5e; /* green */
+}
+.show-me-btn {
+  display: block;
+  margin: 0 auto 1rem auto;
+  padding: 8px 16px;
+  background-color: #01af5e;
+  border: none;
+  border-radius: 6px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: fit-content;
+}
+
+/* Highlight current user row briefly */
+.current-user {
+  border: 1px solid #01af5e;
+  border-radius: 8px;
+}
+
+.highlight {
+  animation: highlightPulse 1.5s ease;
+}
+
+@keyframes highlightPulse {
+  0% {
+    background-color: #01af5e33;
+  }
+  50% {
+    background-color: #01af5e66;
+  }
+  100% {
+    background-color: #01af5e33;
+  }
+}
+
+.show-me-btn {
+  position: fixed; /* stay in place while scrolling */
+  bottom: 20px; /* distance from bottom */
+  right: 20px; /* distance from right */
+  padding: 12px 20px;
+  background: #01af5e; /* club green */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: background 0.2s, transform 0.2s;
+  z-index: 1000; /* above other content */
+}
+
+.show-me-btn:hover {
+  background: #019f55; /* slightly darker green */
+  transform: translateY(-2px);
+}
+.loading-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
