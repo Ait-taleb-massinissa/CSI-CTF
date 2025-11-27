@@ -62,10 +62,9 @@ export default function Profile() {
   return (
     <PageContainer>
       <div className="profile-container">
-        
         {/* Left Menu */}
         <div className="profile-menu">
-          {["profile", "email", "password", "theme"].map((cat) => (
+          {["profile", "email", "password"].map((cat) => (
             <div
               key={cat}
               className={`menu-item ${activeCategory === cat ? "active" : ""}`}
@@ -189,7 +188,11 @@ export default function Profile() {
 
         {/* Notification Toast */}
         {message && (
-          <div className={`toast ${message.type === "error" ? "error" : "success"}`}>
+          <div
+            className={`toast ${
+              message.type === "error" ? "error" : "success"
+            }`}
+          >
             {message.text}
           </div>
         )}
